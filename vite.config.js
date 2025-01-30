@@ -9,6 +9,9 @@ export default defineConfig({
     tailwindcss(),
   ],
   base: "/Portfolio/",  
+  build: {
+    outDir: 'dist',
+  },
   // Correct placement of assetsInclude
   assetsInclude: ['**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.gif', '**/*.svg'],
 });
