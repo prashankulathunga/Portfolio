@@ -1,7 +1,7 @@
 import Device from "../other/Device";
-import RFIASIMG from "../assets/RFIAS.png";
-import PawnIMG from "../assets/pawn.png";
-import posAPIIMG from "../assets/posAPI.png";
+import RFIASIMG from "../../Images/RFIAS.png";
+import PawnIMG from "../../Images/pawn.png";
+import posAPIIMG from "../../Images/posAPI.png";
 import { motion } from "framer-motion";
 
 const Projects = () => {

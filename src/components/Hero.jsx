@@ -1,6 +1,6 @@
 import React from "react";
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
-import HeroImage from "../assets/Hero2.png";
+import HeroImage from "../../Images/Hero2.png";
 import Button from "../other/Button.jsx";
 import { motion } from "motion/react";
 const Hero = () => {
