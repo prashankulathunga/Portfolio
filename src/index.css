@@ -1,9 +1,8 @@
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
 :root{
     color-scheme: dark;
+    scroll-behavior: smooth;
 }
 
 
@@ -36,6 +35,3 @@
     display: none;
   }
 
-  h3{
-    font-family: "Roboto", serif;
-  }

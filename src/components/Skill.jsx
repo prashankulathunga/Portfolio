@@ -1,7 +1,9 @@
+import {motion} from 'framer-motion';
+
 const Skill = () => {
   return (
     <>
-      <div className="container mx-auto p-4 pb-12 relative md:pt-28" id="about">
+      <motion.div initial={{y:300, opacity:0}}  whileInView={{opacity:1, y:0}} viewport={{once:true, amount:0.2}}  className="container mx-auto p-4 pb-12 relative md:pt-28" id="about">
         <div className="h-20 w-40 blur-3xl absolute inset-1/2 bg-white" />
         <div className=" bg-gray-900/30 drop-shadow-xl shadow-2xl w-full rounded-xl pb-12">
           <div className="grid grid-cols-1 md:grid-cols-12 ">
@@ -181,7 +183,7 @@ const Skill = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

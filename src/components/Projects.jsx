@@ -1,5 +1,6 @@
 import Device from "../other/Device";
 import IMG from "../assets/DentalIMG.jpeg";
+import {motion} from "framer-motion";
 
 const Projects = () => {
   const projects = [
@@ -25,7 +26,7 @@ const Projects = () => {
 
   return (
     <>
-      <div className="container mx-auto md:p-4 pb-12 md:pt-16 ">
+      <motion.div initial={{y:300, opacity:0}}  whileInView={{opacity:1, y:0}} viewport={{once:true, amount:0.2}} className="container mx-auto md:p-4 pb-12 md:pt-16" id="projects">
         <div className="bg-gray-900/30 rounded-lg md:pb-6 pb-4">
           <h2 className="text-sm md:text-lg p-6 md:p-8 font-medium text-white text-left py-4">
             Projects & Contributions
@@ -55,7 +56,7 @@ const Projects = () => {
             ))}
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };
